@@ -170,7 +170,7 @@ def maketitles():
                 highraritytitleend = titlelist[randint(1,length)]
                
 
-        finaltitles.append((r1rarity, r2rarity, r3rarity, highraritytitle))  
+        finaltitles.append((r2rarity, r1rarity, r3rarity, highraritytitle))  
 
 
     print(finaltitles)
