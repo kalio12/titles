@@ -52,6 +52,7 @@ def maketitles():
 
     #low rarity title
     if roll_1 < 61:
+        print ('LOW')
         r1rarity = 'low'
         lowraritytitle = titlelist[randint(1,length)]
         print ('first try')
@@ -65,6 +66,7 @@ def maketitles():
         
     #medium rarity title   
     if roll_1 in range(61,95):
+        print ('MEDIUM')
         r1rarity = 'medium'
         medraritytitle = ""
         medraritytitlebeg = titlelist[randint(1,length)]
@@ -96,6 +98,7 @@ def maketitles():
 
     #high rarity title
     if roll_1 in range (96,100):
+        print ('HIGH')
         r1rarity = 'high'    
         highraritytitle = ""
         highraritytitlebeg = titlelist[randint(1,length)]
