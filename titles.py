@@ -51,7 +51,6 @@ def maketitles():
     if roll_1 < 61:
         r1rarity = 'low'
         lowraritytitle = titlelist[randint(1,length)]
-        print (lowraritytitle)
         while True:
             if (lowraritytitle[1] == "Middle") and (lowraritytitle[2] == "Low"):
                 finaltitles.append((r1rarity, lowraritytitle[0]))
