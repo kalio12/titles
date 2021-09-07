@@ -138,7 +138,7 @@ def maketitles():
 
 
     for row in finaltitles:
-        print '%s | %s | %s | %s \n' % row
+        print ('%s | %s | %s | %s \n' % row)
 
         
 for i range(0,5):
