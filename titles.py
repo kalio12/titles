@@ -52,12 +52,11 @@ def maketitles():
 
     #low rarity title
     if roll_1 < 61:
-        print ('LOW')
         r1rarity = 'low'
         lowraritytitle = titlelist[randint(1,length)]
         print ('first try')
         print (lowraritytitle)
-        while (lowraritytitle[2] != "Low") and (lowraritytitle[1] != "Middle"):
+        while (lowraritytitle[1] != "Middle") and (lowraritytitle[2] != "Low"):
             print('no good, trying again')
             lowraritytitle = titlelist[randint(1,length)]
             print (lowraritytitle)
