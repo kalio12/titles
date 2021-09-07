@@ -75,7 +75,7 @@ def maketitles():
         if roll_2 < 61:
             r2rarity = 'low'
             while Truee:
-                if (medraritytitlebeg[2] == "Low" and (medraritytitlebeg[1] == "Beginning"):
+                if (medraritytitlebeg[2] == "Low") and (medraritytitlebeg[1] == "Beginning"):
                     medraritytitle = medraritytitlebeg[0]
                     break
                 medraritytitlebeg = titlelist[randint(1,length)]
