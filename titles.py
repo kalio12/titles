@@ -14,7 +14,7 @@ from random import seed
 from random import randint
 
 
-def maketitles:
+def maketitles():
 
     #first roll to determine overall rarity. second roll to determine rarity of the beginning of title, if applicable. Third roll to determine rarity of the end of title, if applicable
     roll_1 = randint(0, 100)
