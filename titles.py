@@ -59,6 +59,7 @@ def maketitles():
         while True:
             if (lowraritytitle[1] == "Middle") and (lowraritytitle[2] == "Low"):
                 finaltitles.append((r1rarity, lowraritytitle[0]))
+                break
             lowraritytitle = titlelist[randint(1,length)]
         
         #print (lowraritytitle[0])
