@@ -20,9 +20,6 @@ def maketitles():
     roll_1 = randint(0, 100)
     roll_2 = randint(0, 100)
     roll_3 = randint(0, 100)
-    print(roll_1)
-    print(roll_2)
-    print(roll_3)
     titlelist = []
     finaltitles = []
     r1rarity = ''
@@ -163,9 +160,9 @@ def maketitles():
             r3rarity = 'medium'  
             while True:
                 if (highraritytitleend[2] == "Medium")  and (highraritytitleend[1] == "End"):
-                    highraritytitleend = titlelist[randint(1,length)]
+                    highraritytitle = highraritytitle + " " + highraritytitleend[0]
                     break
-            highraritytitle = highraritytitle + " " + highraritytitleend[0] 
+                highraritytitleend = titlelist[randint(1,length)]
             
         if roll_3 in range (96,100):
             r3rarity = 'high'  
