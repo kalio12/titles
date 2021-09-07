@@ -96,7 +96,7 @@ def maketitles():
         highraritytitleend = titlelist[randint(1,length)]
             #determine the beginning of the title
         if roll_2 < 61:
-                r2rarity = 'low'
+            r2rarity = 'low'
             while highraritytitlebeg[2] != "Low" and highraritytitlebeg[1] != "Beginning":
                 highraritytitlebeg = titlelist[randint(1,length)]
             highraritytitle = highraritytitlebeg[0]
