@@ -48,7 +48,7 @@ def maketitles():
         titlelist.append((title,location,rarity))
         
 
-    length = len(titlelist)
+    length = len(titlelist) - 1
 
     #low rarity title
     if roll_1 < 61:
