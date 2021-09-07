@@ -55,6 +55,7 @@ def maketitles():
         while lowraritytitle[2] != "Low" and lowraritytitle[1] != "Middle":
             lowraritytitle = titlelist[randint(1,length)]
         finaltitles.append(r1rarity, lowraritytitle[0])
+        print lowraritytitle
         
     #medium rarity title   
     if roll_1 in range(61,95):
@@ -84,7 +85,7 @@ def maketitles():
         while medraritytitlemid[2] != "Medium"  and medraritytitlemid[1] != "Middle":
             medraritytitlemid = titlelist[randint(1,length)]
         medraritytitle = medraritytitle + " " + medraritytitlemid[0]
-        
+        print medraritytitle
         finaltitles.append(r1rarity, r2rarity, medraritytitle)    
 
     #high rarity title
@@ -132,7 +133,7 @@ def maketitles():
             while highraritytitleend[2] != "High"  and highraritytitleend[1] != "End":
                 highraritytitleend = titlelist[randint(1,length)]
             highraritytitle = highraritytitle + " " + highraritytitleend[0]    
-
+        print highraritytitle
         finaltitles.append(r1rarity, r2rarity, r3rarity, highraritytitle)  
 
 
