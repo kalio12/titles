@@ -54,8 +54,12 @@ def maketitles():
     if roll_1 < 61:
         r1rarity = 'low'
         lowraritytitle = titlelist[randint(1,length)]
+        print ('first try')
+        print (lowraritytitle)
         while lowraritytitle[2] != "Low" and lowraritytitle[1] != "Middle":
+            print('no good, trying again')
             lowraritytitle = titlelist[randint(1,length)]
+            print (lowraritytitle)
         finaltitles.append((r1rarity, lowraritytitle[0]))
         #print (lowraritytitle[0])
         
@@ -138,7 +142,7 @@ def maketitles():
         #print (highraritytitle)
         finaltitles.append((r1rarity, r2rarity, r3rarity, highraritytitle))  
 
-    print(titlelist)    
+
     print(finaltitles)
 #    for row in finaltitles:
  #       print ('%s | %s | %s | %s \n' % row)
