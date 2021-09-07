@@ -141,5 +141,5 @@ def maketitles():
         print ('%s | %s | %s | %s \n' % row)
 
         
-for i range(0,5):
+for i in range(0,5):
     maketitles
