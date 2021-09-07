@@ -57,7 +57,9 @@ def maketitles():
         print ('first try')
         print (lowraritytitle)
         while lowraritytitle[2] != "Low" 
+            print (lowraritytitle[2])
             while lowraritytitle[1] != "Middle":
+            print(lowraritytitle[1])
             print('no good, trying again')
             lowraritytitle = titlelist[randint(1,length)]
             print (lowraritytitle)
