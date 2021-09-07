@@ -162,7 +162,7 @@ def maketitles():
         if roll_3 in range (61,95):
             r3rarity = 'medium'  
             while True:
-                If (highraritytitleend[2] == "Medium")  and (highraritytitleend[1] == "End"):
+                if (highraritytitleend[2] == "Medium")  and (highraritytitleend[1] == "End"):
                     highraritytitleend = titlelist[randint(1,length)]
                     break
             highraritytitle = highraritytitle + " " + highraritytitleend[0] 
