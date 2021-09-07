@@ -137,9 +137,9 @@ def maketitles():
         finaltitles.append((r1rarity, r2rarity, r3rarity, highraritytitle))  
 
 
-
-    for row in finaltitles:
-        print ('%s | %s | %s | %s \n' % row)
+    print(finaltitles)
+#    for row in finaltitles:
+ #       print ('%s | %s | %s | %s \n' % row)
 
         
 for i in range(0,5):
