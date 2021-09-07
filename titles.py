@@ -66,7 +66,7 @@ def maketitles():
         
     #medium rarity title   
     if roll_1 in range(61,95):
-        print ('MEDIUM')
+
         r1rarity = 'medium'
         medraritytitle = ""
         medraritytitlebeg = titlelist[randint(1,length)]
@@ -74,31 +74,43 @@ def maketitles():
         #determine the beginning of the title
         if roll_2 < 61:
             r2rarity = 'low'
-            while medraritytitlebeg[2] != "Low" and medraritytitlebeg[1] != "Beginning":
+            while Truee:
+                if (medraritytitlebeg[2] == "Low" and (medraritytitlebeg[1] == "Beginning"):
+                    medraritytitle = medraritytitlebeg[0]
+                    break
                 medraritytitlebeg = titlelist[randint(1,length)]
-            medraritytitle = medraritytitlebeg[0]
+                
         if roll_2 in range (61,95):
             r2rarity = 'medium'
-            while medraritytitlebeg[2] != "Medium" and medraritytitlebeg[1] != "Beginning":
+            while True:
+                if (medraritytitlebeg[2] == "Medium") and (medraritytitlebeg[1] == "Beginning"):
+                    medraritytitle = medraritytitlebeg[0]
+                    break
                 medraritytitlebeg = titlelist[randint(1,length)]
-            medraritytitle = medraritytitlebeg[0]
+            
         if roll_2 in range (96,100):
             r2rarity = 'high'
-            while medraritytitlebeg[2] != "Medium" and medraritytitlebeg[1] != "Beginning":
+            while True:
+                if (medraritytitlebeg[2] == "Medium") and (medraritytitlebeg[1] == "Beginning"):
+                    medraritytitle = medraritytitlebeg[0]  
+                    break
                 medraritytitlebeg = titlelist[randint(1,length)]
-            medraritytitle = medraritytitlebeg[0]     
+               
             
             
         #determine the end of the title        
-        while medraritytitlemid[2] != "Medium"  and medraritytitlemid[1] != "Middle":
+        while True:
+            if (medraritytitlemid[2] == "Medium")  and (medraritytitlemid[1] == "Middle"):
+                medraritytitle = medraritytitle + " " + medraritytitlemid[0]
+                break
             medraritytitlemid = titlelist[randint(1,length)]
-        medraritytitle = medraritytitle + " " + medraritytitlemid[0]
-        #print (medraritytitle)
+        
+
         finaltitles.append((r1rarity, r2rarity, medraritytitle))    
 
     #high rarity title
     if roll_1 in range (96,100):
-        print ('HIGH')
+
         r1rarity = 'high'    
         highraritytitle = ""
         highraritytitlebeg = titlelist[randint(1,length)]
@@ -107,42 +119,63 @@ def maketitles():
             #determine the beginning of the title
         if roll_2 < 61:
             r2rarity = 'low'
-            while highraritytitlebeg[2] != "Low" and highraritytitlebeg[1] != "Beginning":
+            while True:
+                if (highraritytitlebeg[2] == "Low") and (highraritytitlebeg[1] == "Beginning"):
+                    highraritytitle = highraritytitlebeg[0]
+                    break  
                 highraritytitlebeg = titlelist[randint(1,length)]
-            highraritytitle = highraritytitlebeg[0]
+            
         if roll_2 in range (61,95):
             r2rarity = 'medium'
-            while highraritytitlebeg[2] != "Medium" and highraritytitlebeg[1] != "Beginning":
+            while True:
+                if (highraritytitlebeg[2] == "Medium") and (highraritytitlebeg[1] == "Beginning"):
+                    highraritytitle = highraritytitlebeg[0]
+                    break
                 highraritytitlebeg = titlelist[randint(1,length)]
-            highraritytitle = highraritytitlebeg[0]
+            
         if roll_2 in range (96,100):
             r2rarity = 'high'
-            while highraritytitlebeg[2] != "High" and highraritytitlebeg[1] != "Beginning":
+            while True:
+                if (highraritytitlebeg[2] == "High") and (highraritytitlebeg[1] == "Beginning"):
+                    highraritytitle = highraritytitlebeg[0]   
+                    break
                 highraritytitlebeg = titlelist[randint(1,length)]
-            highraritytitle = highraritytitlebeg[0]     
+              
       
         #determine middle of title
-        while highraritytitlemid[2] != "High" and highraritytitlemid[1] != "Middle":
+        while True:
+            if (highraritytitlemid[2] == "High") and (highraritytitlemid[1] == "Middle"):
+                highraritytitle = highraritytitle + " " + highraritytitlemid[0] 
+                break
             highraritytitlemid = titlelist[randint(1,length)]
-        highraritytitle = highraritytitle + " " + highraritytitlemid[0]      
+             
           
         #determine the end of the title      
         if roll_3 < 61:
             r3rarity = 'low'  
-            while highraritytitleend[2] != "Low" and highraritytitleend[1] != "End":
+            while True:
+                if (highraritytitleend[2] == "Low") and (highraritytitleend[1] == "End"):
+                    highraritytitle = highraritytitle + " " + highraritytitleend[0]
+                    break
                 highraritytitleend = titlelist[randint(1,length)]
-            highraritytitle = highraritytitle + " " + highraritytitleend[0] 
+             
         if roll_3 in range (61,95):
             r3rarity = 'medium'  
-            while highraritytitleend[2] != "Medium"  and highraritytitleend[1] != "End":
-                highraritytitleend = titlelist[randint(1,length)]
+            while True:
+                If (highraritytitleend[2] == "Medium")  and (highraritytitleend[1] == "End"):
+                    highraritytitleend = titlelist[randint(1,length)]
+                    break
             highraritytitle = highraritytitle + " " + highraritytitleend[0] 
+            
         if roll_3 in range (96,100):
             r3rarity = 'high'  
-            while highraritytitleend[2] != "High"  and highraritytitleend[1] != "End":
+            while True:
+                if (highraritytitleend[2] == "High")  and (highraritytitleend[1] == "End"):
+                    highraritytitle = highraritytitle + " " + highraritytitleend[0] 
+                    break
                 highraritytitleend = titlelist[randint(1,length)]
-            highraritytitle = highraritytitle + " " + highraritytitleend[0]    
-        #print (highraritytitle)
+               
+
         finaltitles.append((r1rarity, r2rarity, r3rarity, highraritytitle))  
 
 
