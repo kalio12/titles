@@ -138,11 +138,11 @@ def maketitles():
         #print (highraritytitle)
         finaltitles.append((r1rarity, r2rarity, r3rarity, highraritytitle))  
 
-
+    print(titlelist)    
     print(finaltitles)
 #    for row in finaltitles:
  #       print ('%s | %s | %s | %s \n' % row)
 
-        
+    
 for i in range(0,10):
     maketitles()
